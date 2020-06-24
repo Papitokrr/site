@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hosting</title>
+</head>
+<body>
+
+
+   <svg display="none">
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+        </symbol>
+
+         <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+                <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+            </g></symbol>
+
+        <symbol id="linkedin" viewBox="0 0 24 24">
+            <g>
+                <path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/>
+            </g></symbol>
+
+        <symbol id="instagram" viewBox="0 0 438.536 438.536">
+            <g>
+                    <path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+        C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+        h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+        C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+        c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+        c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+        C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+        c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+        H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+        c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+        c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+        c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+        c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+        c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+            </g>
+        </symbol>
+
+    </svg>
+
+
+   <div class="page">
+
+
+        <!-- Intro -->
+        <div class="intro">
+
+            <!-- Header -->
+            <header class="header">
+                <div class="container-header">
+                   <div class="header-inner">
+                        <div class="header-logo" >
+                            <div class="header-img">
+                                <img src="img/header/logo1.png" alt="">
+                            </div>
+                            <p class="header-text">nine cloud <span>hosting</span></p>
+                        </div>
+
+                        <nav class="header-menu">
+                           <ul class="header-list">
+                               <li>
+                                   <a class="header-link" href="#">hosting</a>
+                               </li>
+                               <li>
+                                   <a class="header-link" href="#">Domains</a>
+                               </li>
+                               <li>
+                                   <a class="header-link" href="#">features</a>
+                               </li>
+                               <li>
+                                   <a class="header-link" href="#">testimonials</a>
+                               </li>
+                               <li>
+                                   <a class="header-link" href="#">contacts</a>
+                               </li>
+                           </ul>
+                        </nav>
+                        <div class="login">
+                            <a class="logo-link" href="#">Login</a>
+                        </div>
+
+                         <div class="header-burger">
+                            <span></span>
+                        </div>
+                    </div>
+</div>
+            </header><!-- /.header -->
+
+
+            <hr class="header-hr" />
+
+
+            <div class="container">
+               <div class="intro-inner">
+                    <h1 class="intro-title">Strength in equality. The power of dreams</h1>
+                    <h3 class="intro-subtitle">Web hosting for $9.95/mo $2.95/mo. Sign up today and also get a free 1-on-1 consultation to help you get started.
+                    </h3>
+                    <a class="intro-btn" href="#">Get Started</a>
+
+                    <p><a class="read-more" href="#">Learn more</a></p>
+
+                    <form class="form" action="/" method="post">
+                        <input class="intro-slaider" type="radio" name="name" checked>
+                        <input class="intro-slaider slider-middle" type="radio" name="name">
+                        <input class="intro-slaider" type="radio" name="name">
+                    </form>
+                </div>
+            </div><!-- /.container -->
+
+
+
+
+
+        </div><!-- /.intro -->
+
+
+        <!-- Main-features -->
+        <section class="main-features">
+                    <div class="container">
+                        <div class="main-features-items">
+                            <div class="main-features-item">
+                                <div class="main-features-icon">
+                                    <img class="main-features-img" src="img/main-features/icon1.png" alt="">
+                                </div>
+                                <div class="main-features-content">
+                                    <h2 class="main-features-title">99,9% UPtime guarantee</h2>
+                                    <div class="text">
+                                        <p>Disk space in all packages has been increased by ten times!</p>
+                                    </div>
+                                    <p><a href="#">READ MORE</a></p>
+                                </div>
+                            </div>
+
+                            <div class="main-features-item middle">
+                                <div class="main-features-icon">
+                                    <img class="main-features-img" src="img/main-features/icon2.png" alt="">
+                                </div>
+                                <div class="main-features-content">
+                                    <h2 class="main-features-title">Managed Services</h2>
+                                    <div class="text">
+                                        <p>Leave the set up, management and monitoring to us.</p>
+                                    </div>
+                                    <p><a href="#">READ MORE</a></p>
+                                </div>
+                            </div>
+
+                            <div class="main-features-item">
+                                <div class="main-features-icon">
+                                    <img class="main-features-img" src="img/main-features/icon3.png" alt="">
+                                </div>
+                                <div class="main-features-content">
+                                    <h2 class="main-features-title">Cloud Services</h2>
+                                    <div class="text">
+                                        <p>Reliable, high- performance cloud that meets your changing business demands.</p>
+                                    </div>
+                                    <p><a href="#">READ MORE</a></p>
+                                </div>
+                            </div>
+                        </div><!-- /.main-features-items -->
+                    </div><!-- /.container -->
+                </section><!-- /.main-features -->
+
+
+        <!-- Search -->
+        <section class="section-search">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Search Domain</h2>
+                    <h3 class="subtitle">Save big on domain options like .com, .co, .biz, .net, .org and grab new domains like .xyz, .club, .guru, .email, .link, .today, and more!</h3>
+                </div>
+
+                <form class="search-form" action="formdata" method="post">
+                   <div class="search-form-inner">
+                        <input class="search-form-input" name="name" placeholder="http://" type="search">
+                        <select class="domens" name="domen">
+                              <option>.com</option>
+                              <option>.co</option>
+                              <option>.biz</option>
+                              <option>.net</option>
+                              <option>.xyz</option>
+                              <option>.club</option>
+                              <option>.guru</option>
+                              <option>.email</option>
+                              <option>.link</option>
+                              <option>.today</option>
+                        </select>
+                        <button class="search-button" type="submit">find domain</button>
+                    </div>
+                </form>
+
+                <div class="search-items">
+                    <div class="search-item">
+                        <div class="search-icon">
+                            <img src="img/search/icon2.png" alt="" class="search-img">
+                        </div>
+                        <div class="search-content">
+                            <h2 class="search-title">find domain</h2>
+                            <div class="text">
+                                <p>Etiam efficitur, risus sit amet sodales laoreet, sem mauris interdum lectus, nec luctus est.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="search-icon">
+                            <img src="img/search/icon3.png" alt="" class="search-img">
+                        </div>
+                        <div class="search-content">
+                            <h2 class="search-title">choose a plan</h2>
+                            <div class="text">
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="search-icon">
+                            <img src="img/search/icon4.png" alt="" class="search-img">
+                        </div>
+                        <div class="search-content">
+                            <h2 class="search-title">build your website</h2>
+                            <div class="text">
+                                <p>Curabitur imperdiet enim id faucibus sollicitudin. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.search-items -->
+
+            </div><!-- /.container -->
+        </section><!-- /.search -->
+
+
+        <!-- Features -->
+        <section class="section-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title features">Features</h2>
+                </div>
+
+                <div class="features-items">
+
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <img src="img/features/icon1.png" alt="" class="search-img">
+                            </div>
+                            <div class="features-item-content">
+                                <h2 class="features-title">Made with love</h2>
+                                <div class="text">
+                                    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="features-item">
+                            <div class="features-icon">
+                                <img src="img/features/icon2.png" alt="" class="search-img">
+                            </div>
+                            <div class="features-item-content">
+                                <h2 class="features-title">Databases</h2>
+                                <div class="text">
+                                    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <img src="img/features/icon3.png" alt="" class="search-img">
+                            </div>
+                            <div class="features-item-content">
+                                <h2 class="features-title">VPS server</h2>
+                                <div class="text">
+                                    <p>Phasellus aliquam arcu quis lectus aliquam, sed dignissim ligula efficitur.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="features-item">
+                            <div class="features-icon">
+                                <img src="img/features/icon4.png" alt="" class="search-img">
+                            </div>
+                            <div class="features-item-content">
+                                <h2 class="features-title">Fully secured</h2>
+                                <div class="text">
+                                    <p>Phasellus aliquam arcu quis lectus aliquam efficitur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <img src="img/features/icon5.png" alt="" class="search-img">
+                            </div>
+                            <div class="features-item-content">
+                                <h2 class="features-title">Daily backups</h2>
+                                <div class="text">
+                                    <p>Aliquam nisl lectus, rhoncus nec ex vestibulum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="img/features/icon6.png" alt="" class="search-img">
+                        </div>
+                        <div class="features-item-content">
+                            <h2 class="features-title">Cloud hosted</h2>
+                            <div class="text">
+                                <p>Etiam sagittis tellus at lacus cursus, non molestie nulla.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.features-items -->
+
+            </div><!-- /.container -->
+        </section><!-- /.features -->
+
+
+        <!-- Plan -->
+        <section class="section-plan">
+            <div class="container">
+                <div class="section-header plan">
+                    <h2 class="title">Pick your plan</h2>
+                    <h3 class="subtitle">Upgrade, downgrade or cancel anytime.</h3>
+                </div>
+
+                <div class="plan-items">
+                    <div class="plan-item">
+                        <div class="header-item">
+                            <h2 class="plan-title">Personal</h2>
+                            <h3 class="plan-subtitle">Perfect Pack for Small Business</h3>
+                        </div>
+                        <div class="plan-item-content">
+                            <p class="plan-price"><sup><span class="dollar">$</span></sup>25<span class="month"><span class="backslash">/</span>mo</span></p>
+                            <ul class="quantity-list">
+                                <li><span class="quantity">3 Gb</span> of storage</li>
+                                <li><span class="quantity">10</span> repositories</li>
+                                <li><span class="quantity">10</span> parked domains</li>
+                                <li><span class="quantity">25 FTP</span> accounts</li>
+                            </ul>
+                        </div>
+                        <a class="plan-btn" href="#">order now</a>
+                    </div>
+                    <div class="plan-item middle">
+                        <div class="header-item-middle">
+                            <h2 class="plan-title-middle">business</h2>
+                            <h3 class="plan-subtitle-middle">Perfect Pack for Small Business</h3>
+                        </div>
+                        <div class="plan-item-content">
+                            <p class="plan-price-middle"><sup><span class="dollar middle">$</span></sup>45<span class="month"><span class="backslash">/</span>mo</span></p>
+                            <ul class="quantity-list-middle">
+                                <li><span class="quantity">3 Gb</span> of storage</li>
+                                <li><span class="quantity">10</span> repositories</li>
+                                <li><span class="quantity">10</span> parked domains</li>
+                                <li><span class="quantity">25 FTP</span> accounts</li>
+                            </ul>
+                        </div>
+                        <a class="plan-btn-middle" href="#">order now</a>
+                    </div>
+                    <div class="plan-item">
+                        <div class="header-item">
+                            <h2 class="plan-title">Personal</h2>
+                            <h3 class="plan-subtitle">Perfect Pack for Small Business</h3>
+                        </div>
+                        <div class="plan-item-content">
+                            <p class="plan-price"><sup><span class="dollar">$</span></sup>65<span class="month"><span class="backslash">/</span>mo</span></p>
+                           <ul class="quantity-list">
+                                <li><span class="quantity">3 Gb</span> of storage</li>
+                                <li><span class="quantity">10</span> repositories</li>
+                                <li><span class="quantity">10</span> parked domains</li>
+                                <li><span class="quantity">25 FTP</span> accounts</li>
+                            </ul>
+                        </div>
+                        <a class="plan-btn" href="#">order now</a>
+                    </div>
+                </div><!-- /.plan-items -->
+
+                <div class="plan-footer">
+                    <p>If you need help finding a plan that’s right for you,</p>
+                    <p>just <span>chat with a live person</span>.</p>
+                </div>
+
+            </div><!-- /.container -->
+
+        </section><!-- /.plan -->
+
+
+        <!-- Testimonials -->
+        <section class="section-testimonials">
+            <div class="container">
+                <div class="section-header testimonials">
+                    <h2 class="title">Testimonials</h2>
+                    <h3 class="subtitle">Couple of words about this section</h3>
+                </div>
+
+                <div class="testimonials-content">
+                    <div class="quotes">
+                        <img src="img/testimonials/quotes.png" alt="">
+                    </div>
+                    <div class="testimonials-text">The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</div>
+                    <div class="testimonials-img">
+                       <img src="img/testimonials/img.jpg" alt="">
+                    </div>
+                    <div class="testimonials-author">Oscar Wild,  Pragmatic Solutions</div>
+                    <form class="form" action="/" method="post">
+                        <input class="intro-slaider" type="radio" name="name" checked>
+                        <input class="intro-slaider slider-middle" type="radio" name="name">
+                        <input class="intro-slaider" type="radio" name="name">
+                    </form>
+                </div>
+            </div><!-- /.container -->
+
+        </section><!-- /.testimonials -->
+
+
+        <!-- Blog -->
+        <section class="section-blog">
+            <div class="container">
+                <div class="section-header blog">
+                    <h2 class="title">Company Blog</h2>
+                </div>
+
+                <div class="blog-items">
+                <div class="blog-item">
+                    <div class="blog-content">
+                        <div class="title blog">How does the Internet Create Potential</div>
+                        <div class="blog-stat">
+                            <div class="date">06 January, 2014</div>
+                            <div class="comments">6 comments </div>
+                            <div class="heart">
+                                <img src="img/blog/icon.png" alt="">
+                            </div>
+                            <div class="like">12</div>
+                        </div>
+                        <div class="text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <span><a href="#">Read More</a></span></div>
+                    </div>
+                    <div class="blog-img">
+                        <img src="img/blog/img1.jpg" alt="">
+                    </div>
+                </div>
+
+                <hr class="blog-hr">
+
+                <div class="blog-item">
+                    <div class="blog-content">
+                        <div class="title blog">How does the Internet Create Potential</div>
+                        <div class="blog-stat">
+                            <div class="date">06 January, 2014</div>
+                            <div class="comments">6 comments </div>
+                            <div class="heart">
+                                <img src="img/blog/icon.png" alt="">
+                            </div>
+                            <div class="like">12</div>
+                        </div>
+                        <div class="text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <span><a href="#">Read More</a></span></div>
+                    </div>
+                    <div class="blog-img">
+                        <img src="img/blog/img2.jpg" alt="">
+                    </div>
+                </div>
+
+                <hr class="blog-hr">
+
+                <div class="blog-item">
+                    <div class="blog-content">
+                        <div class="title blog">How does the Internet Create Potential</div>
+                        <div class="blog-stat">
+                            <div class="date">06 January, 2014</div>
+                            <div class="comments">6 comments </div>
+                            <div class="heart">
+                                <img src="img/blog/icon.png" alt="">
+                            </div>
+                            <div class="like">12</div>
+                        </div>
+                        <div class="text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <span><a href="#">Read More</a></span></div>
+                    </div>
+                    <div class="blog-img">
+                        <img src="img/blog/img3.jpg" alt="">
+                    </div>
+                </div>
+               </div><!-- /.blog-items -->
+
+                <div class="blog-button">
+                    <a class="blog-btn" href="#">show more</a>
+                </div>
+           </div><!-- /.container -->
+        </section><!-- /.blog -->
+
+
+        <!-- Contacts -->
+        <section class="section-contacts">
+            <div class="container">
+                <div class="contacts-content">
+                    <h3 class="title content">We are interested <br>in long-term cooperation</h3>
+                    <div class="address">
+                        <p>100 William Street</p>
+                        <p>New York, New York 10038</p>
+                    </div>
+                    <div class="days">Mon – Fri , 8 am – 5 pm</div>
+                    <div class="tel">800-638-9996, 518-292-4500<span class="mail">info@somecompany.com</span></div>
+                </div>
+            </div>
+        </section><!-- /.contacts -->
+
+
+        <!-- Social -->
+        <section class="section-social">
+            <div class="container">
+                <div class="social-content">
+                    <div class="social-col1">
+                        <div class="social-title">Follow us on</div>
+                        <div class="social-items">
+                            <ul class="social-items-list">
+                                <li class="social-item twitter">
+                                    <a class="social-link  social-link-tw" href="#" target="_blank">
+                                        <svg class="social-link-twitter">
+                                            <use href="#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item facebook">
+                                    <a class="social-link  social-link-fb" href="#" target="_blank">
+                                        <svg class="social-link-facebook">
+                                            <use href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item linkedin">
+                                    <a class="social-link  social-link-in" href="#" target="_blank">
+                                        <svg class="social-link-linkedin">
+                                            <use href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item instagram">
+                                    <a class="social-link  social-link-inst" href="#" target="_blank">
+                                        <svg class="social-link-instagram">
+                                            <use href="#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="social-col2">
+                        <div class="social-title">subscribe</div>
+                        <div class="social-form">
+                            <form class="social-form" action="/" method="post">
+                                <div class="social-form-inner">
+                                    <input class="social-form-input" name="name" placeholder="Enter your e-mail here" type="email">
+                                    <button class="social-button" type="submit">send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </section> <!-- /.social -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-col1">
+                        <div class="footer-title">Solutions</div>
+                        <ul class="footer-col-list">
+                            <li><a href="#">Web Solutions Overview</a></li>
+                            <li><a href="#">Email Marketing</a></li>
+                            <li><a href="#">Website Promotion</a></li>
+                            <li><a href="#">eCommerce Website</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col2">
+                        <div class="footer-title">Services</div>
+                        <ul class="footer-col-list">
+                            <li><a href="#">Shared Hosting</a></li>
+                            <li><a href="#">Reseller Hosting</a></li>
+                            <li><a href="#">Cloud Managed VPS</a></li>
+                            <li><a href="#">Dedicated Servers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col3">
+                        <div class="footer-title">support</div>
+                        <ul class="footer-col-list">
+                            <li><a href="#">Knowledge Base</a></li>
+                            <li><a href="#">Support Request</a></li>
+                            <li><a href="#">Client Area</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col4">
+                         <div class="footer-title">Legal Terms</div>
+                         <ul class="footer-col-list">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-col5">
+                        <div class="footer-tel">(044) 383 4389</div>
+                        <div class="footer-mail">support@cloudhost.com</div>
+                        <div class="copyright">Copyright © 2015 Cloud Host. All rights reserved.</div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </footer><!-- /.footer -->
+
+
+    </div><!-- /.page -->
+
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
